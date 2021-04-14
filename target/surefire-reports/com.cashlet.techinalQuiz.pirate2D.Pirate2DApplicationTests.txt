@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cashlet.techinalQuiz.pirate2D.Pirate2DApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.78 s - in com.cashlet.techinalQuiz.pirate2D.Pirate2DApplicationTests
