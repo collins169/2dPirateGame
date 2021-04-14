@@ -12,7 +12,6 @@ import java.util.List;
 
 @Controller
 @RestController()
-@RequestMapping("/api/v1")
 public class MapController {
     Logger logger = LoggerFactory.getLogger(MapController.class);
     Object obj = new Object();
@@ -29,6 +28,7 @@ public class MapController {
                                         @RequestParam("startYPosition") int startYPosition,
                                         @RequestParam("targetXPosition") int targetXPosition,
                                         @RequestParam("targetYPosition") int targetYPosition){
+        //Cast object to list of Request
         List<List<Request>> data = (List<List<Request>>) obj;
 //        for (int i = startXPosition; i < data.size(); ++i) {
 //            for(int j = targetYPosition; j < data.get(startYPosition).size(); ++j) {
