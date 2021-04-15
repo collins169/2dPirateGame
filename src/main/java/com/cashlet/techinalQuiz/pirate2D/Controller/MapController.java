@@ -43,7 +43,7 @@ public class MapController {
                 //let loop through the rows
                 for (int j = 0; j < data[i].length; j++) {
                     //let check if the position is lesser than or equals to the target positions
-                    if (targetXPosition <= i && targetYPosition >= i) {
+                    if (startXPosition <= i && targetYPosition <= i) {
                         ArrayList<Integer> patha = new ArrayList<>();
                         logger.info(data[i][j] + " ");
                         logger.info("point [{}, {}]", targetXPosition - i, targetYPosition - j);
@@ -53,10 +53,10 @@ public class MapController {
                         //let store item in a set list to prevent duplication
                         items.add(data[i][j]);
                     }
-                    if (targetXPosition <= j && targetYPosition >= j) {
+                    if (startYPosition <= j && targetYPosition <= j) {
                         ArrayList<Integer> addPath = new ArrayList<>();
                         logger.info(data[i][j] + " ");
-                        logger.info("point [{}, {}]", targetXPosition - i, targetYPosition - j);
+                        logger.info("point [{}, {}]", i, j);
                         addPath.add(i);
                         addPath.add(j);
                         paths.add(addPath);
